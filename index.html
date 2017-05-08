@@ -5,12 +5,20 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Учебник по Ruby on Rails</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- font awesome -->
+	<script src="https://use.fontawesome.com/abe478f38e.js"></script>
+	<!-- font google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- code -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ocean.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -23,7 +31,82 @@
 
 <body>
 
-	
+	<header>
+		<nav>
+			<ul class="header_menu">
+				<li><a class="header_menu_link left" href="#">
+					<i class="fa fa-home icon icon_first" aria-hidden="true"></i>
+					главная
+				</a></li>
+				<li><a class="header_menu_link left none" href="#">
+					<i class="fa fa-envelope-o icon" aria-hidden="true"></i>
+					написать мне
+				</a></li>
+			</ul>
+			<ul class="header_menu">
+				<li><a class="header_menu_link" href="#">
+					<i class="fa fa-coffee icon" aria-hidden="true"></i>
+					поддержать проект
+				</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="content">
+		<section class="">
+			<h1>Заголовок</h1>
+			<h2>Заголовок</h2>
+			<h3>Заголовок</h3>
+			<h4>Заголовок</h4>
+			<h5>Заголовок</h5>
+			<h6>Заголовок</h6>
+
+			<p>Flexbox по праву можно назвать удачной попыткой решения огромного спектра проблем при построении лейаутов в css. Но прежде чем перейти к его описанию, давайте выясним, что же не так со способами верстки, которыми мы пользуемся сейчас?
+			Любой верстальщик знает несколько путей выровнять что-либо по вертикали или сделать 3-х колоночный макет с резиновой средней колонкой. Но давайте признаем, что все эти способы довольно странные, похожи на хак, подходят не во всех случаях, сложны для восприятия и не работают при несоблюдении определенных магических условий, которые сложились исторически.
+			Случилось так потому, что html и css развивались эволюционно. В начале веб-страницы были похожи на однопоточные текстовые документы, чуть позже разбиение страницы на блоки делали таблицами, затем стало модным верстать float-ами, а после официальной смерти ie6 добавились еще и приемы с inline-block. В итоге мы получили в наследство гремучую смесь всех этих приемов, используемую для построения лейаутов 99,9% всех существующих веб-страниц.</p>
+
+			<span class="box"><h4 class="box_h4">Box 2.1. Rake</h4>
+			Flexbox по праву можно назвать удачной попыткой решения огромного спектра проблем при построении лейаутов в css. Но прежде чем перейти к его описанию, давайте выясним, что же не так со способами верстки, которыми мы пользуемся сейчас?
+			Любой верстальщик знает несколько путей выровнять что-либо по вертикали или сделать 3-х колоночный макет с резиновой средней колонкой. Но давайте признаем, что все эти способы довольно странные, похожи на хак, подходят не во всех случаях, сложны для восприятия и не работают при несоблюдении определенных магических условий, которые сложились исторически.</span>
+
+			<!-- стандартная таблица с дексрипшен/без -->
+			<table>
+			  <tr>
+			    <th>Firstname</th>
+			    <th>Lastname</th>
+			    <th>Savings</th>
+			  </tr>
+			  <tr>
+			    <td>Peter</td>
+			    <td>Griffin</td>
+			    <td>$100</td>
+			  </tr>
+			  <tr>
+			    <td>Lois</td>
+			    <td>Griffin</td>
+			    <td>$150</td>
+			  </tr>
+			  <tr>
+			    <td>Joe</td>
+			    <td>Swanson</td>
+			    <td>$300</td>
+			  </tr>
+			  <tr>
+			    <td>Cleveland</td>
+			    <td>Brown</td>
+			    <td>$250</td>
+			  </tr>
+			</table>
+
+			<!-- код с листингом и код без листинга -->
+			<pre>Заголовок<code class="ruby">def hello
+ print "Hello, world!"
+end</code></pre>
+		</section>
+		<footer>
+			Create with love by <a href="#">Klaus Dev</a>
+		</footer>
+	</section>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
